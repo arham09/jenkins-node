@@ -1,0 +1,18 @@
+{
+  "name": "jenkins-node",
+  "version": "0.0.1",
+  "description": "Used for jenkins CI/CD",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Arham Abiyan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "mocha": "^6.2.2",
+    "supertest": "^4.0.2"
+  }
+}
