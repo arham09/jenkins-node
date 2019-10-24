@@ -1,10 +1,10 @@
-const request = require("supertest");
+const supertest = require("supertest");
 const server = require("../server");
 
-describe(`GET /`, () => {
-  it(`respond with hello world`, done => {
-    request(server)
+describe("GET /", function() {
+  it("respond with json containing a list of all users", function(done) {
+    supertest(server)
       .get("/")
-      .expect(`Hello World`, done);
+      .expect(200, done);
   });
 });
